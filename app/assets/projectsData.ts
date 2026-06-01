@@ -1,39 +1,61 @@
 export const projectsData = [
     {
-      title: "ProjectSHub",
-      description:
-        "ProjectShub is a curated collection of web development projects ranging from beginner to advanced levels. Explore a variety of hands-on HTML, CSS, and JavaScript projects designed to help learners practice, build real skills, and enhance their coding journey.",
-      image: "/Projects_Img/bg4.png",
-      liveDemo: "https://projectshubb.vercel.app/",
-      sourceCode: "https://github.com/Bilal742/ProjectsHub",
-      techStack: ["Next.js","Typescript","Javascript","React","Tailwind","GitHub","MongoDB"],
-    },
-    {
-      title: "E-Commerce App",
-      description:
-        "A modern and responsive e-commerce application built with Next.js and Tailwind CSS for premium hoodies.",
-      image: "/Projects_Img/bg5.png",
-      liveDemo: "https://hood-anixx.vercel.app/",
-      sourceCode: "https://github.com/Bilal742/HoodAnix",
-      techStack: ["react", "redux", "crud", "typescript", "react-router", "rest-api", "recipe-app", "tailwindcss", "dummyjson"],
-    },
-    {
-      title: "Amna's Mehndi Studio",
-      description:
-        "A professional mehndi services website built with Next.js, featuring smooth animations and elegant UI.",
-      image: "/Projects_Img/bg6.png",
-      liveDemo: "https://amna-s-mehndi-studio.vercel.app/",
-      sourceCode: "https://github.com/Bilal742/Amna-s-Mehndi-Studio",
-      techStack: ["react", "tailwindcss", "typescript", "react-router", "rest-api", "Todo-App", "Quiz-App", "multi-step-form"],
-    },
-    {
-      title: "Villa Website",
-      description:
-        "A modern villa booking website built with React and Tailwind CSS.",
-      image: "/Projects_Img/bg2.png",
-      liveDemo: "https://ivilla.vercel.app/",
-      sourceCode: "https://github.com/Bilal742/Villa-Website",
-      techStack: ["react", "typescript", "tailwindcss", "react-router", "room-booking", "booking-website", "formly-email"],
-    },
-  ];
-  
+    title: "LogoVines",
+    description:
+      "A modern logo gallery platform for uploading and showcasing logos.",
+    image: "/Projects_Img/bg8.png",
+    liveDemo: "https://logovines.vercel.app/",
+    sourceCode: "https://github.com/mrvornex/LogoVines",
+    techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
+  },
+  {
+    title: "ProjectSHub",
+    description:
+      "A platform featuring beginner-to-advanced web development projects.",
+    image: "/Projects_Img/bg4.png",
+    liveDemo: "https://projectshubb.vercel.app/",
+    sourceCode: "https://github.com/Bilal742/ProjectsHub",
+    techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
+  },
+  {
+    title: "E-Commerce App",
+    description:
+      "A modern e-commerce application for premium hoodies.",
+    image: "/Projects_Img/bg5.png",
+    liveDemo: "https://hoodanix.vercel.app/",
+    sourceCode: "https://github.com/mrvornex/HoodAnix",
+    techStack: [
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwindcss",
+      "responsive-design",
+      "ecommerce"
+    ]
+  },
+  {
+    title: "Amna's Mehndi Studio",
+    description:
+      "A responsive mehndi services website built with Next.js..",
+    image: "/Projects_Img/bg6.png",
+    liveDemo: "https://amna-s-mehndi-studio.vercel.app/",
+    sourceCode: "https://github.com/mrvornex/AmnaS",
+    techStack: [
+      "nextjs",
+      "react",
+      "typescript",
+      "tailwindcss",
+      "responsive-design",
+      "framer-motion"
+    ]
+  },
+  {
+    title: "Villa Website",
+    description:
+      "A modern villa booking website built with React and Tailwind CSS.",
+    image: "/Projects_Img/bg2.png",
+    liveDemo: "https://villaaa.vercel.app/",
+    sourceCode: "https://github.com/mrvornex/Villa",
+    techStack: ["react", "tailwindcss", "react-router", "room-booking", "booking-website", "resend"],
+  },
+];

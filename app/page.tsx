@@ -74,7 +74,7 @@ const Page = () => {
       <>
         <div className="bg-dark-bg min-h-screen text-light-gray antialiased pt-5">
           <div className="max-w-[47.5rem] mx-auto px-6 text-gray-500">
-            {/* <Header /> */}
+            <Header />
             <main className="pb-10">
               <Hero />
               <TechStack />

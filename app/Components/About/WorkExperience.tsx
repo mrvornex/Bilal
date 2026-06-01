@@ -8,7 +8,7 @@ const WorkExperience = () => {
       <div className="flex flex-col gap-14">
         <div className="flex gap-10 max-sm:flex-col">
           <p className="text-light-gray whitespace-nowrap max-sm:hidden">
-            2024 - 2025
+            2024 - Present
           </p>
 
           <div>
@@ -19,50 +19,31 @@ const WorkExperience = () => {
             <p className="text-light-gray mb-4">
               Professional Software Development Course – Jawan Pakistan
               <span className="text-light-gray ml-2 max-sm:inline-block hidden">
-                • (2024 - 2025)
+                • (2024 - Present)
               </span>
             </p>
 
             <p className="text-light-gray">
-              Over the past year, I have been studying professional software
-              development at Jawan Pakistan, where my primary focus has been on
-              modern frontend technologies such as HTML, CSS, JavaScript, and
-              React. I started my web development journey in 2024 with zero
-              prior knowledge but a strong passion for coding. Through
-              consistent practice and continuous learning, I progressed from
-              basic HTML & CSS to JavaScript, and then moved on to advanced
-              technologies like React, Tailwind CSS, Next.js, and TypeScript. I
-              am currently expanding my skills by exploring backend technologies
-              such as Node.js, Express.js, and MongoDB.
+              I am currently pursuing a Professional Software Development course
+              at Jawan Pakistan, where I have gained hands-on experience in
+              HTML, CSS, JavaScript, React, Tailwind CSS, Next.js, and
+              TypeScript. Since starting my web development journey in 2024, I
+              have built a strong foundation in modern frontend development
+              through consistent learning and practical projects.
               <br />
               <br />
-              During this time, I completed several practical, real-world
-              assignments, including a Student Management System with dynamic
-              forms and CRUD functionality, a Contact Book App using local
-              storage, and a React-based single-page project that was also
-              deployed online. These projects helped me build a solid
-              understanding of core frontend concepts such as component-based
-              architecture, props and state management, and routing.
+              During my training, I completed projects including a Student
+              Management System, Contact Book Application, and multiple
+              responsive web applications. These projects strengthened my
+              understanding of component-based architecture, state management,
+              routing, and responsive design.
               <br />
               <br />
-              In addition, I gained hands-on experience with Git and GitHub for
-              version control, and I consistently focused on writing clean,
-              well-structured, and maintainable code.
-              <br />
-              <br />
-              Alongside software development, I also have experience in AI-based
-              content creation and digital media production. I manage a YouTube
-              channel with over 75.5K subscribers, where I create and publish
-              AI-generated video content. I use modern AI tools to produce
-              creative visuals, engaging short-form videos, and unique digital
-              concepts.
-              <br />
-              <br />
-              I also have strong skills in AI-powered photo editing and image
-              enhancement, including improving low-quality or blurry photos,
-              generating professional portraits, creating multiple poses,
-              changing outfits, and producing customized visual edits based on
-              client requirements.
+              I also have experience with Git and GitHub for version control and
+              focus on writing clean, maintainable code. In addition, I create
+              AI-generated content and manage a YouTube channel with 78.5K+
+              subscribers. I also work with AI-powered image enhancement,
+              professional portraits, and customized visual editing.
             </p>
           </div>
         </div>
