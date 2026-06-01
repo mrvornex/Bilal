@@ -2,7 +2,7 @@
 // import githubImage from "/images/bg2.png";
 // import resume from './public/Muhammad-Bilal.pdf';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin , faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
@@ -34,12 +34,12 @@ const Hero = () => {
 
                 <div className="w-full flex items-center justify-between max-md:flex-col max-md:gap-3">
                     <a
-                        href="https://www.google.com/maps/place/Karachi"
+                        href="https://www.youtube.com/@TalkingAIWorldOfficial"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-white transition-colors"
                     >
-                        <FontAwesomeIcon icon={faHome} size="1x" color="white"/> Karachi, Pakistan.
+                        <FontAwesomeIcon icon={faYoutube} size="1x" color="white"/> YouTube
                     </a>
 
                     <div className="flex items-center gap-5 text-base max-md:mt-3 m-2">
