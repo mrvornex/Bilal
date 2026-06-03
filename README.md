@@ -83,6 +83,5 @@ It’s more than a portfolio — it’s a reflection of **my growth as a develop
 ## 👨‍💻 Developer
 
 **Muhammad Bilal**  
-📧 [bilalusman1291@gmail.com](mailto:bilalusman1291@gmail.com)  
-🌐 [Portfolio](https://imuhammad-bilal.vercel.app/)  
-🐙 [GitHub](https://github.com/Bilal742)
+🌐 [Portfolio](https://mrvornex.vercel.app/)  
+🐙 [GitHub](https://github.com/mrvornex)
