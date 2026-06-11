@@ -6,6 +6,15 @@ export const projectsData = [
     image: "/Projects_Img/bg9.png",
     liveDemo: "https://fakeforge.vercel.app/",
     sourceCode: "https://github.com/mrvornex/FakeForge",
+    techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB","Api"],
+  },
+  {
+    title: "DropMail",
+    description:
+      "Free temporary & disposable email",
+    image: "/Projects_Img/bg10.png",
+    liveDemo: "https://dropmail.vercel.app/",
+    sourceCode: "https://github.com/mrvornex/DropMail",
     techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
   },
     {
