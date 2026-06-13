@@ -3,7 +3,7 @@ export const projectsData = [
     title: "FakeForge",
     description:
       "A fake data generator that helps developers create realistic mock data for apps and APIs.",
-    image: "/Projects_Img/bg9.png",
+    image: "/Projects_Img/bg12.png",
     liveDemo: "https://fakeforge.vercel.app/",
     sourceCode: "https://github.com/mrvornex/FakeForge",
     techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB","Api"],
