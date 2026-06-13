@@ -63,7 +63,7 @@ const Hero = () => {
                             GitHub
                         </a>
                         <a
-                            href={"/Muhammad_Bilal.pdf"}
+                            href={"/Bilal.pdf"}
                             download="Muhammad-Anas-Resume.pdf"
                             className="px-4 py-2 border border-green-500 text-green-400 rounded-lg 
                  hover:bg-green-500/10 hover:shadow-[0_0_10px_rgba(34,197,94,0.7)] 
