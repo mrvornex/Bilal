@@ -15,7 +15,7 @@ const techStack = [
 
 const TechStack = () => {
   return (
-    <section className="mt-24">
+    <section className="mt-1">
       <h2 className="text-lg font-bold tracking-widest uppercase text-black mb-10">
         Tech Stack
       </h2>

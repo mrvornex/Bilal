@@ -9,6 +9,15 @@ export const projectsData = [
   techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
   },
   {
+    title: "ProjectSHub",
+    description:
+      "A platform featuring beginner-to-advanced web development projects.",
+    image: "/Projects_Img/bg4.png",
+    liveDemo: "https://projectshubofficial.vercel.app/",
+    sourceCode: "https://github.com/mrvornex/ProjectsHub",
+    techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
+  },
+  {
     title: "FakeForge",
     description:
       "A fake data generator that helps developers create realistic mock data for apps and APIs.",
@@ -24,15 +33,6 @@ export const projectsData = [
     image: "/Projects_Img/bg11.png",
     liveDemo: "https://instainbox.vercel.app/",
     sourceCode: "https://github.com/mrvornex/InstaInbox",
-    techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
-  },
-  {
-    title: "ProjectSHub",
-    description:
-      "A platform featuring beginner-to-advanced web development projects.",
-    image: "/Projects_Img/bg4.png",
-    liveDemo: "https://projectshubb.vercel.app/",
-    sourceCode: "https://github.com/Bilal742/ProjectsHub",
     techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
   },
   {
