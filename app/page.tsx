@@ -29,7 +29,7 @@ const AnimatedText: React.FC<{ text: string; speed?: number; className?: string 
   return (
     <p className={`${className} whitespace-pre`}>
       {displayedText}
-      <span className="inline-block w-1 bg-white ml-1 animate-blink"></span>
+      <span className="inline-block w-1 bg-black ml-1 animate-blink"></span>
     </p>
   );
 };
@@ -43,22 +43,22 @@ function WelcomeAnimation({ onComplete }: { onComplete?: () => void }) {
   }, [onComplete]);
 
   return (
-    <div className="fixed top-0 left-0 w-screen h-screen bg-black z-50 flex flex-col justify-center items-center overflow-hidden">
-      <h1 className="text-5xl sm:text-6xl font-bold text-[#00EEFF] mb-4 drop-shadow-[0_0_20px_#00EEFF]">
+    <div className="fixed top-0 left-0 w-screen h-screen bg-white z-50 flex flex-col justify-center items-center overflow-hidden font-mono">
+      <h1 className="text-5xl sm:text-6xl font-bold text-black mb-4">
         <AnimatedText text="Muhammad Bilal" speed={100} />
       </h1>
 
       <div className="mb-2">
         <AnimatedText
           text="Frontend Developer"
-          className="text-xl sm:text-2xl text-white drop-shadow-[0_0_12px_#00EEFF]"
+          className="text-xl sm:text-2xl text-gray-600"
           speed={80}
         />
       </div>
 
       <AnimatedText
         text="Welcome to my Portfolio"
-        className="text-lg text-white/80 drop-shadow-[0_0_10px_#00EEFF]"
+        className="text-lg text-gray-400"
         speed={60}
       />
     </div>
@@ -72,7 +72,7 @@ const Page = () => {
     <div className="relative">
 
       <>
-        <div className="bg-dark-bg min-h-screen text-light-gray antialiased pt-5">
+        <div className="bg-white min-h-screen text-gray-700 antialiased pt-5 font-mono">
           <div className="max-w-[47.5rem] mx-auto px-6 text-gray-500">
             <Header />
             <main className="pb-10">

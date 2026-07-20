@@ -4,7 +4,7 @@ const Footer = () => {
       id="contact"
       className="pt-6 border-t border-light-gray/20 pb-6 mt-5"
     >
-      <div className="flex items-center gap-2 hover:text-white transition-colors">
+      <div className="flex items-center gap-2 transition-colors">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

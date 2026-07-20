@@ -1,5 +1,14 @@
 export const projectsData = [
   {
+  title: "LogoVines",
+  description:
+    "A modern logo gallery platform for uploading and showcasing logos.",
+  image: "/Projects_Img/bg8.png",
+  liveDemo: "https://logovines.vercel.app/",
+  sourceCode: "https://github.com/mrvornex/LogoVines",
+  techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
+  },
+  {
     title: "FakeForge",
     description:
       "A fake data generator that helps developers create realistic mock data for apps and APIs.",
@@ -15,15 +24,6 @@ export const projectsData = [
     image: "/Projects_Img/bg11.png",
     liveDemo: "https://instainbox.vercel.app/",
     sourceCode: "https://github.com/mrvornex/InstaInbox",
-    techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
-  },
-    {
-    title: "LogoVines",
-    description:
-      "A modern logo gallery platform for uploading and showcasing logos.",
-    image: "/Projects_Img/bg8.png",
-    liveDemo: "https://logovines.vercel.app/",
-    sourceCode: "https://github.com/mrvornex/LogoVines",
     techStack: ["Next.js", "Typescript", "Javascript", "React", "Tailwind", "GitHub", "MongoDB"],
   },
   {
@@ -67,13 +67,13 @@ export const projectsData = [
       "framer-motion"
     ]
   },
-  {
-    title: "Villa Website",
-    description:
-      "A modern villa booking website built with React and Tailwind CSS.",
-    image: "/Projects_Img/bg2.png",
-    liveDemo: "https://villaaa.vercel.app/",
-    sourceCode: "https://github.com/mrvornex/Villa",
-    techStack: ["react", "tailwindcss", "react-router", "room-booking", "booking-website", "resend"],
-  },
+  // {
+  //   title: "Villa Website",
+  //   description:
+  //     "A modern villa booking website built with React and Tailwind CSS.",
+  //   image: "/Projects_Img/bg2.png",
+  //   liveDemo: "https://villaaa.vercel.app/",
+  //   sourceCode: "https://github.com/mrvornex/Villa",
+  //   techStack: ["react", "tailwindcss", "react-router", "room-booking", "booking-website", "resend"],
+  // },
 ];

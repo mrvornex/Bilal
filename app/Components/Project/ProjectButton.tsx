@@ -3,21 +3,18 @@ import React from "react";
 interface ProjectButtonProps {
   href: string;
   children: React.ReactNode;
-  color?: "blue" | "gray";
 }
 
-const ProjectButton: React.FC<ProjectButtonProps> = ({ href, children, color = "blue" }) => {
-  const colorStyles =
-    color === "blue"
-      ? "px-4 py-2 rounded-lg border border-blue-400 text-blue-300 text-sm font-medium hover:bg-blue-500/10 hover:shadow-[0_0_10px_rgba(59,130,246,0.7)] transition duration-300"
-      : "px-4 py-2 rounded-lg border border-gray-400 text-gray-300 text-sm font-medium hover:bg-gray-500/10 hover:shadow-[0_0_10px_rgba(156,163,175,0.7)] transition duration-300";
-
+const ProjectButton: React.FC<ProjectButtonProps> = ({
+  href,
+  children,
+}) => {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`px-4 py-2 rounded-lg text-sm font-medium transition duration-300 ${colorStyles}`}
+      className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors duration-200"
     >
       {children}
     </a>
