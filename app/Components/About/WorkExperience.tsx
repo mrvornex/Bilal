@@ -1,7 +1,7 @@
 const WorkExperience = () => {
   return (
     <section id="work-experience" className="mt-24">
-      <h2 className="font-bold text-lg tracking-widest text-white uppercase mb-10">
+      <h2 className="font-bold text-lg tracking-widest text-black uppercase mb-10">
         Work Experience
       </h2>
 
