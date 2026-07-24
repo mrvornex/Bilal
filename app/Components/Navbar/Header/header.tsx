@@ -17,13 +17,13 @@ const Header = () => {
 
           <a
             href="/"
-            className="font-bold text-black hover:text-gray-600 uppercase text-lg tracking-widest transition-colors"
+            className="font-mono text-black hover:text-gray-600 uppercase text-[16px] tracking-widest transition-colors"
           >
             Bilal (mrvornex)
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6 text-lg text-gray-500">
+          <div className="hidden md:flex items-center gap-6 font-mono text-[16px] text-gray-500">
             <a
               href="#work-experience"
               className="hover:text-black transition-colors"

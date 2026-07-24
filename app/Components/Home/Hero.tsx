@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GitHubCalendar } from "react-github-calendar";
 import {
   faGithub,
   faLinkedin,
@@ -15,41 +16,41 @@ interface GithubUser {
 const Hero = () => {
   const [githubData, setGithubData] = useState<GithubUser | null>(null);
 
-useEffect(() => {
-  fetch("https://api.github.com/users/mrvornex")
-    .then((res) => res.json())
-    .then((data: GithubUser) => setGithubData(data));
-}, []);
+  useEffect(() => {
+    fetch("https://api.github.com/users/mrvornex")
+      .then((res) => res.json())
+      .then((data: GithubUser) => setGithubData(data));
+  }, []);
 
   return (
     <section className="max-w-5xl mx-auto px-6 py-20 font-mono">
       <div className="flex flex-col items-start gap-6">
         {/* Profile Image */}
         <img
-          src="/Home_Img/bg9.png"
+          src="/Home_Img/bg10.png"
           alt="Muhammad Bilal"
           className="w-32 h-32 rounded-full border border-gray-300 object-cover"
         />
 
         {/* Name */}
-        <h1 className="text-5xl font-bold text-black">
+        <h1 className="text-2xl font-semibold font-bold text-black">
           Muhammad Bilal
         </h1>
 
         {/* Role */}
-        <p className="text-xl text-gray-600">
+        <p className="leading-7 text-zinc-600 text-gray-600">
           Full Stack Developer, Content Creator, Educator
         </p>
 
         {/* About */}
-        <p className="max-w-3xl text-lg text-gray-700 leading-8">
+        <p className="max-w-3xl leading-7 text-zinc-600 text-gray-700 leading-8">
           I build modern web applications and share my coding journey online.
           Passionate about React, Firebase, MongoDB, Node.js and helping
           developers learn through practical projects.
         </p>
 
         {/* Social Links */}
-        <div className="flex gap-6 text-2xl text-gray-600">
+        <div className="flex gap-6 text-zinc-600 text-gray-600">
           <a
             href="https://github.com/mrvornex"
             target="_blank"
@@ -78,7 +79,7 @@ useEffect(() => {
           </a>
 
           <a
-            href="https://x.com"
+            href="https://x.com/mrvornex"
             target="_blank"
             rel="noreferrer"
             className="hover:text-black transition"
@@ -88,14 +89,14 @@ useEffect(() => {
         </div>
 
         {/* Stats */}
-        <div className="mt-4 space-y-3 text-gray-700">
-          <p className="flex items-center gap-2">
-            ▶️ <span>78.5K Subscribers</span>
+        <div className="mt-4 space-y-3 font-mono text-[16px] text-zinc-500">
+          <p className="flex items-center gap-2 tabular-nums">
+            <FontAwesomeIcon icon={faYoutube} /> <span>78.5K Subscribers</span>
           </p>
 
           {githubData && (
-            <p className="flex items-center gap-2">
-              🐙 {githubData.followers} Followers •{" "}
+            <p className="flex items-center gap-2 tabular-nums">
+              <FontAwesomeIcon icon={faGithub} /> {githubData.followers} Followers •{" "}
               {githubData.public_repos} Repositories
             </p>
           )}
@@ -111,17 +112,24 @@ useEffect(() => {
         </a>
 
         {/* Activity Section */}
-        <div className="w-full mt-16">
-          <h2 className="text-2xl font-bold mb-2">ACTIVITY</h2>
+        <div className="mt-10">
+          <h2 className="text-2xl font-bold mb-4">ACTIVITY</h2>
 
           <p className="text-gray-600 mb-6">
             GitHub contributions over the last year.
           </p>
-
-          <img
-            src="https://ghchart.rshah.org/mrvornex"
-            alt="GitHub Contributions"
-            className="w-full"
+          <GitHubCalendar
+            username="mrvornex"
+            colorScheme="light"
+            theme={{
+              light: [
+                "#ebedf0",
+                "#d1d5db",
+                "#9ca3af",
+                "#6b7280",
+                "#1f2937",
+              ],
+            }}
           />
         </div>
       </div>
