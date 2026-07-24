@@ -1,80 +1,128 @@
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faYoutube,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
-    return (
-        <section className="pb-20 pt-16 flex items-center gap-10 max-md:flex-col max-md:text-center font-mono">
-            <div className="relative w-44 h-44 min-w-[11rem] min-h-[11rem] rounded-full overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 rounded-full p-1">
-                    <div className="w-full h-full bg-white rounded-full">
-                        <img
-                            src="/Home_Img/bg9.png"
-                            alt="Muhammad Bilal"
-                            className="w-full h-full object-cover rounded-full border-4 border-white"
-                        />
-                    </div>
-                </div>
-            </div>
+  const [githubData, setGithubData] = useState(null);
 
-            <div className="flex flex-col items-start gap-5 max-md:items-center">
-                <h1 className="text-[25px] font-bold tracking-[0.03em] relative text-black">
-                    <span className="text-black">Hey, I'm Bilal.</span> I'm a Full-Stack{" "}
-                    <br className="max-md:hidden" />
-                    Software Developer.
-                    <span className="bg-green-600/10 absolute md:right-0 md:bottom-1.5 max-md:relative max-md:mt-3 whitespace-nowrap text-green-600 hover:bg-green-500/20 text-sm px-3 py-1 rounded-full inline-block hover:text-green-500">
-                        <span className="p-1 mb-px mr-1.5 inline-block bg-green-600 rounded-full"></span>
-                        Open to work
-                    </span>
-                </h1>
+  useEffect(() => {
+    fetch("https://api.github.com/users/mrvornex")
+      .then((res) => res.json())
+      .then((data) => setGithubData(data))
+      .catch((err) => console.log(err));
+  }, []);
 
-               <div className="w-full flex items-center justify-between max-md:flex-col max-md:gap-3 text-gray-500">
+  return (
+    <section className="max-w-5xl mx-auto px-6 py-20 font-mono">
+      <div className="flex flex-col items-start gap-6">
+        {/* Profile Image */}
+        <img
+          src="/Home_Img/bg9.png"
+          alt="Muhammad Bilal"
+          className="w-32 h-32 rounded-full border border-gray-300 object-cover"
+        />
 
-    <a
-        href="https://www.youtube.com/@TalkingAIWorldOfficial"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-black transition-colors"
-    >
-        <FontAwesomeIcon icon={faYoutube} /> YouTube
-    </a>
+        {/* Name */}
+        <h1 className="text-5xl font-bold text-black">
+          Muhammad Bilal
+        </h1>
 
-                    <div className="flex items-center gap-5 text-base max-md:mt-3 m-2">
+        {/* Role */}
+        <p className="text-xl text-gray-600">
+          Full Stack Developer, Content Creator, Educator
+        </p>
 
-    <a
-        href="https://www.linkedin.com/in/mrvornex"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center gap-1 hover:text-black transition-colors"
-    >
-        <FontAwesomeIcon icon={faLinkedin} />
-        LinkedIn
-    </a>
-                        <a
-                            href="https://github.com/mrvornex"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-1 hover:text-black transition-colors"
-                        >
-                            {/* <img src={"bg1.svg"} alt="GitHub" className="w-5 h-5" /> */}
-                            <FontAwesomeIcon icon={faGithub} color="currentColor" />
-                            GitHub
-                        </a>
-                            <a
-                            href={"/Bilal.pdf"}
-                            download="Muhammad-Bilal-Resume.pdf"
-                            className="px-4 py-2 border border-green-500 text-green-600 rounded-lg 
-                 hover:bg-green-500/10 
-                 transition duration-300 text-sm font-medium"
-                        >
-                            📄 Resume
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+        {/* About */}
+        <p className="max-w-3xl text-lg text-gray-700 leading-8">
+          I build modern web applications and share my coding journey online.
+          Passionate about React, Firebase, MongoDB, Node.js and helping
+          developers learn through practical projects.
+        </p>
+
+        {/* Social Links */}
+        <div className="flex gap-6 text-2xl text-gray-600">
+          <a
+            href="https://github.com/mrvornex"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black transition"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mrvornex"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black transition"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@TalkingAIWorldOfficial"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black transition"
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+
+          <a
+            href="https://x.com"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black transition"
+          >
+            <FontAwesomeIcon icon={faXTwitter} />
+          </a>
+        </div>
+
+        {/* Stats */}
+        <div className="mt-4 space-y-3 text-gray-700">
+          <p className="flex items-center gap-2">
+            ▶️ <span>78.5K Subscribers</span>
+          </p>
+
+          {githubData && (
+            <p className="flex items-center gap-2">
+              🐙 {githubData.followers} Followers •{" "}
+              {githubData.public_repos} Repositories
+            </p>
+          )}
+        </div>
+
+        {/* Resume Button */}
+        <a
+          href="/Bilal.pdf"
+          download="Muhammad-Bilal-Resume.pdf"
+          className="mt-2 px-5 py-2 border border-black rounded-lg hover:bg-black hover:text-white transition"
+        >
+          Download Resume
+        </a>
+
+        {/* Activity Section */}
+        <div className="w-full mt-16">
+          <h2 className="text-2xl font-bold mb-2">ACTIVITY</h2>
+
+          <p className="text-gray-600 mb-6">
+            GitHub contributions over the last year.
+          </p>
+
+          <img
+            src="https://ghchart.rshah.org/mrvornex"
+            alt="GitHub Contributions"
+            className="w-full"
+          />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
