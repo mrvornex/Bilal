@@ -7,15 +7,19 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Hero = () => {
-  const [githubData, setGithubData] = useState(null);
+interface GithubUser {
+  followers: number;
+  public_repos: number;
+}
 
-  useEffect(() => {
-    fetch("https://api.github.com/users/mrvornex")
-      .then((res) => res.json())
-      .then((data) => setGithubData(data))
-      .catch((err) => console.log(err));
-  }, []);
+const Hero = () => {
+  const [githubData, setGithubData] = useState<GithubUser | null>(null);
+
+useEffect(() => {
+  fetch("https://api.github.com/users/mrvornex")
+    .then((res) => res.json())
+    .then((data: GithubUser) => setGithubData(data));
+}, []);
 
   return (
     <section className="max-w-5xl mx-auto px-6 py-20 font-mono">
